@@ -32,6 +32,8 @@ body {
 
 /* -------- Шапка сайта -------- */
 header {
+  border: 1px solid #ececec;
+
   background-color: var(--white);
 }
 
@@ -153,9 +155,14 @@ header {
 /* ------ секция герой (студия) ----- */
 
 .hero {
-  margin-bottom: 94px;
-  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 94px;
 
   color: var(--white);
   background-color: var(--backgraund-color-1);
@@ -175,7 +182,6 @@ header {
 .hero .title {
   margin: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
 }
 
 .hero .button {
@@ -355,9 +361,9 @@ header {
 
 .our-team .social-networks {
   display: flex;
+  justify-content: ;
   padding: 0;
   margin: 0;
-  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -492,14 +498,22 @@ footer .join-in {
   padding: 0;
   margin: 0;
   margin-left: 70px;
+}
+
+.join-in .title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 
   color: var(--white);
 
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 footer .join-in .social-networks {
@@ -542,6 +556,7 @@ footer .join-in .social-networks {
   color: var(--title-text-color);
   background-color: var(--backgraung-color-2);
 
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -598,7 +613,7 @@ footer .join-in .social-networks {
 
 .projects .title {
   margin: 0;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
 
